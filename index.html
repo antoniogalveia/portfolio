@@ -1,33 +1,280 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Junot | Front-End Developer e Designer</title>
-    <link rel="shortcut icon" href="imgs/logo-branco.png" type="image/x-icon">
+    <link rel="shortcut icon" href="imgs/avatar.png" type="image/x-icon">
     <link rel="stylesheet" href="css/style.css" media="all">
-    <link rel="stylesheet" href="css/mq.css">
     <script src="https://kit.fontawesome.com/235dcaae55.js" crossorigin="anonymous"></script>
-    <script src="js/index.js"></script>
+    <script src="js/openMenu.js"></script>
+    <!--<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.0/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/mouseee@1.2.0/lib/index.js" type="module"></script> -->
 </head>
-<body onresize="windowSize()">
-    <header>
-        <div id="icone">
-            <img src="imgs/logo-branco.png" alt="Avatar">
+
+<body>
+    <!--
+    <div class="loader-container">
+        <div class="loader"></div>
+    </div>
+    -->
+
+
+    <div class="container">
+        <i class="fa-solid fa-bars" onclick="openMenu()"></i>
+        <div id="menu">
+            <img src="imgs/avatar.png" alt="Junot's Avatar">
+            <div class="nav-items">
+                <a href="#about"><i class="fa-solid fa-house"></i></a>
+                <a href="#"><i class="fa-solid fa-user"></i></a>
+                <a href="#"><i class="fa-solid fa-wand-magic-sparkles"></i></a>
+                <a href="#"><i class="fa-solid fa-briefcase"></i></a>
+                <a href="#"><i class="fa-solid fa-phone"></i></a>
+            </div>
         </div>
-        <div id="nav">
-            <i class="fa-solid fa-bars" id="burguer" onclick="openMenu()"></i>
-            <nav id="menu">
-                <ul>
-                    <li><a href="#" class="nav-link">About Me</a></li>
-                    <li><a href="#" class="nav-link">My Work</a></li>
-                    <li><a href="#" id="touch">Get in Touch</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
-    <main id="container">
-    </main>
+        <div class="content">
+            <section class="principal">
+                <img src="imgs/avatar-natal.png" alt="Junot's Christmas Avatar">
+                <h1>Hi, I am <span>Junot</span></h1>
+                <h2>FrontEnd Developer, Web Designer<br>and Freelancer!</h2>
+                <a href="#">
+                    <button>Start a Project</button>
+                </a><br>
+                <i class="fa-solid fa-arrow-down"></i>
+            </section>
+            <section class="about" id="about">
+                <h2>Who am I?</h2>
+                <p>Hi there, my name is Junot and 
+                    I'm a Frontend Developer and Web
+                    Designer.<br>
+                    When I have oppurtunities, I work
+                    as freelancer.<br>
+                    I love football and sports in general.<br>
+                    You can see my resume by clicking in
+                    the button below!</p>
+                <img src="imgs/frontend.jpg" alt="Front End">
+                <a href="#">
+                    <button>Resume</button>
+                </a>
+            </section>
+            <section class="skills-sec">
+                <h2>My Skills</h2>
+                <div class="skills">
+                    <div class="skill">
+                    <div class="skill-name">HTML</div>
+                    <div class="skill-bar">
+                        <div class="skill-per" per="90%" style="max-width:90%"></div>
+                    </div>
+                    </div>
+                
+                    <div class="skill">
+                    <div class="skill-name">CSS</div>
+                    <div class="skill-bar">
+                        <div class="skill-per" per="75%" style="max-width:75%"></div>
+                    </div>
+                    </div>
+                
+                    <div class="skill">
+                    <div class="skill-name">Javascript</div>
+                    <div class="skill-bar">
+                        <div class="skill-per" per="60%" style="max-width:60%"></div>
+                    </div>
+                    </div>
+
+                    <div class="skill">
+                        <div class="skill-name">Backend</div>
+                        <div class="skill-bar">
+                            <div class="skill-per" per="40%" style="max-width:40%"></div>
+                        </div>
+                        </div>
+                </div>
+            </section>
+            <section class="facts">
+                <h2>Facts</h2>
+                <div class="facts-flex">
+                    <div>
+                        <i class="fa-solid fa-user"></i>
+                        <h3>232</h3>
+                        <p>Happy Clients</p>
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-briefcase"></i>
+                        <h3>500+</h3>
+                        <p>Projects</p>
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-headset"></i>
+                        <h3>1600+</h3>
+                        <p>Hours of support</p>
+                    </div>
+                </div>
+            </section>
+            <section class="portfolio">
+                <h2>Recent Work</h2>
+                <div class="work">
+                    <div class="flip-card">
+                        <div class="flip-card-inner">
+                          <div class="flip-card-front" style="background-image: url('https://images.ecycle.com.br/wp-content/uploads/2021/05/20195924/o-que-e-paisagem.jpg');">
+                            
+                          </div>
+                          <div class="flip-card-back" style="background-image: url('https://images.ecycle.com.br/wp-content/uploads/2021/05/20195924/o-que-e-paisagem.jpg');">
+                            <div>
+                                <h1>Portfolio</h1>
+                                <p>12/1/2020</p>
+                                <p>Very simple but beautiful portfolio for a friend of mine.</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="flip-card">
+                        <div class="flip-card-inner">
+                          <div class="flip-card-front" style="background-image: url('https://cursinhoparamedicina.com.br/wp-content/uploads/2022/10/Paisagem-1.jpg');">
+                            
+                          </div>
+                          <div class="flip-card-back" style="background-image: url('https://cursinhoparamedicina.com.br/wp-content/uploads/2022/10/Paisagem-1.jpg');">
+                            <div>
+                                <h1>Landing Page</h1>
+                                <p>31/6/2021</p>
+                                <p>Very simple but beautiful portfolio for a friend of mine.</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="flip-card">
+                        <div class="flip-card-inner">
+                          <div class="flip-card-front" style="background-image: url('https://www.grupoescolar.com/wp-content/uploads/2021/03/paisagem-2C.jpg');">
+                            
+                          </div>
+                          <div class="flip-card-back" style="background-image: url('https://www.grupoescolar.com/wp-content/uploads/2021/03/paisagem-2C.jpg');">
+                            <div>
+                                <h1>Mobile Design</h1>
+                                <p>3/4/2018</p>
+                                <p>Very simple but beautiful portfolio for a friend of mine.</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="flip-card">
+                        <div class="flip-card-inner">
+                          <div class="flip-card-front" style="background-image: url('https://www.estudokids.com.br/wp-content/uploads/2020/02/o-que-e-paisagem.jpg');">
+                            
+                          </div>
+                          <div class="flip-card-back" style="background-image: url('https://www.estudokids.com.br/wp-content/uploads/2020/02/o-que-e-paisagem.jpg');">
+                            <div>
+                                <h1>Web Design</h1>
+                                <p>6/1/2015</p>
+                                <p>Very simple but beautiful portfolio for a friend of mine.</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="flip-card">
+                        <div class="flip-card-inner">
+                          <div class="flip-card-front" style="background-image: url('https://static.preparaenem.com/2022/08/paisagem-natural-suica.jpg');">
+                            
+                          </div>
+                          <div class="flip-card-back" style="background-image: url('https://static.preparaenem.com/2022/08/paisagem-natural-suica.jpg');">
+                            <div>
+                                <h1>Sketch</h1>
+                                <p>25/9/2011</p>
+                                <p>Very simple but beautiful portfolio for a friend of mine.</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="flip-card">
+                        <div class="flip-card-inner">
+                          <div class="flip-card-front" style="background-image: url('https://thumbs.dreamstime.com/b/paisagens-coloridas-do-cen%C3%A1rio-da-queda-46641435.jpg');">
+                            
+                          </div>
+                          <div class="flip-card-back" style="background-image: url('https://thumbs.dreamstime.com/b/paisagens-coloridas-do-cen%C3%A1rio-da-queda-46641435.jpg');">
+                            <div>
+                                <h1>E-commerce Website</h1>
+                                <p>17/8/2010</p>
+                                <p>Very simple but beautiful portfolio for a friend of mine.</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                </div>
+            </section>
+            <section class="services">
+                <h2>Services</h2>
+                <div class="services-flex">
+                    <div>
+                        <i class="fa-solid fa-pen-nib"></i>
+                        <h3>Design</h3>
+                        <p>I design and project your idea, like you want.</p>
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-code-branch"></i>
+                        <h3>Development</h3>
+                        <p>After the design is ready, I create your project with HTML, CSS, JS, and others...</p>
+                    </div>
+                </div>
+            </section>
+            <section class="testimonials">
+                <h2>Testimonials</h2>
+                <div class="flex">
+                    <div>
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRqE1ps_-BdiMr-nGFbv_6wRqWjh2Yh3naK_g&usqp=CAU" alt="">
+                        <h3>John Doe</h3>
+                        <p>"I worked with John Doe and he's a great guy. He is always willing to help when needed, even if it's not his area. I really liked."</p>
+                    </div>
+                </div>
+            </section>
+            <section class="contact">
+                <h2>Say Hello!</h2>
+                <form action="contact.php" method="post" autocomplete="off">
+                    <div>
+                        <label for="name">Name</label><br>
+                        <input type="text" name="name" id="name">
+                    </div>
+                    <div>
+                        <label for="email">Email</label><br>
+                        <input type="email" name="email" id="email">
+                    </div>
+                    <div>
+                        <label for="msg">Message</label><br>
+                        <textarea name="msg" id="msg" cols="30" rows="10"></textarea>
+                    </div>
+                    <input type="submit" value="Submit" id="submit">
+                </form>
+            </section>
+            <footer>
+                <p>© 2022 Junot. All right reserved.</p>
+            </footer>
+    </div>
+
+
+    <!--
+    <script>
+        $(window).on("load", function () {
+            $(".loader").fadeOut(700);
+            $(".loader-container").fadeOut(1500);
+        });
+
+        var myText = document.getElementById("msg");
+        var result = document.getElementById("result");
+        var limit = 500;
+        result.textContent = 0 + "/" + limit;
+
+        myText.addEventListener("input", function () {
+            var textLength = myText.value.length;
+            result.textContent = textLength + "/" + limit;
+        })
+
+        const mouseeeConfig = {
+            color: "#3E92CC",
+            size: 10,
+            trailColor: "#3E92CC",
+            trailTime: 400,
+            showTrail: true
+        }
+    </script>
+    -->
 </body>
+
 </html>
