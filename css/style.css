@@ -6,14 +6,6 @@
 
 @import url('./tablet.css');
 
-
-/*
-#01303f
-#023C54
-#02a9f7
-#89d6fb
-#d4f0fc
-*/
 :root{
     --cor-principal: #01303f;
     --cor-secundaria: #01354b;
