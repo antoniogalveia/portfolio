@@ -36,18 +36,6 @@ html{
     scroll-behavior: smooth;
 }
 
-.container > i{
-    color: white;
-    font-size: 1.3em;
-    margin: 30px;
-    border-radius: 50%;
-}
-
-.container > i:hover{
-    cursor: pointer;
-    color: var(--cor-titulos);
-}
-
 #menu{
     background-color: rgba(0, 0, 0, 0.479);
     width: 20%;
@@ -55,7 +43,6 @@ html{
     border-bottom-right-radius: 30px;
     border: 1px solid var(--cor-terciaria);
     border-left: none;
-    padding: 15px;
     top: 0;
     position: absolute;
     overflow: hidden;
@@ -67,7 +54,10 @@ html{
 
 #menu > img{
     display: none;
-    
+}
+
+.nav-content{
+    display: none;
 }
 
 .nav-items{
@@ -99,6 +89,7 @@ html{
 }
 
 .principal{
+    padding-top: 60px;
     text-align: center;
     height: 100vh;
     align-items: center;
@@ -188,12 +179,12 @@ html{
 .about > p{
     margin-top: 20px;
     color: var(--cor-paragrafo);
-    text-align: justify;
+    text-align: center;
     margin-bottom: 30px;
 }
 
 .about > img{
-    width: 70%;
+    width: 60%;
     display: block;
     margin: auto;
     margin-bottom: 15px;
@@ -529,7 +520,8 @@ html{
 }
 
 .contact > form{
-    width: 100%;
+    width: 90%;
+    margin: auto;
 }
 
 .contact > form > div > label{
@@ -601,4 +593,27 @@ footer{
 footer > p{
     color: white;
     text-align: center;
+}
+
+footer > .icones{
+    margin-top: 15px;
+    text-align: center;
+}
+
+.icones > a{
+    padding: 10px;
+    color: white;
+}
+
+.icones > a > i{
+    padding: 10px 11px;
+    border-radius: 50%;
+    border: 1px solid white;
+    transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+.icones > a:hover > i{
+    background-color: var(--cor-terciaria);
+    border: 1px solid var(--cor-terciaria);
+    box-shadow: 0 0 0.5em var(--cor-terciaria);
 }

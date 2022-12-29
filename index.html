@@ -8,8 +8,8 @@
     <title>Junot | Front-End Developer e Designer</title>
     <link rel="shortcut icon" href="imgs/avatar.png" type="image/x-icon">
     <link rel="stylesheet" href="css/style.css" media="all">
+    <link rel="stylesheet" href="css/mq.css">
     <script src="https://kit.fontawesome.com/235dcaae55.js" crossorigin="anonymous"></script>
-    <script src="js/openMenu.js"></script>
     <!--<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.0/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/mouseee@1.2.0/lib/index.js" type="module"></script> -->
 </head>
@@ -23,15 +23,22 @@
 
 
     <div class="container">
-        <i class="fa-solid fa-bars" onclick="openMenu()"></i>
-        <div id="menu">
-            <img src="imgs/avatar.png" alt="Junot's Avatar">
-            <div class="nav-items">
-                <a href="#about"><i class="fa-solid fa-house"></i></a>
-                <a href="#"><i class="fa-solid fa-user"></i></a>
-                <a href="#"><i class="fa-solid fa-wand-magic-sparkles"></i></a>
-                <a href="#"><i class="fa-solid fa-briefcase"></i></a>
-                <a href="#"><i class="fa-solid fa-phone"></i></a>
+            <div id="menu">
+                <img src="imgs/avatar.png" alt="Junot's Avatar">
+                <div class="nav-items">
+                    <a href="#about"><i class="fa-solid fa-house"></i></a>
+                    <a href="#"><i class="fa-solid fa-user"></i></a>
+                    <a href="#"><i class="fa-solid fa-wand-magic-sparkles"></i></a>
+                    <a href="#"><i class="fa-solid fa-briefcase"></i></a>
+                    <a href="#"><i class="fa-solid fa-phone"></i></a>
+                </div>
+                <div class="nav-content">
+                    <a href="#about"><i class="fa-solid fa-house"></i> Home</a>
+                    <a href="#"><i class="fa-solid fa-user"></i> About</a>
+                    <a href="#"><i class="fa-solid fa-wand-magic-sparkles"></i> Skills</a>
+                    <a href="#"><i class="fa-solid fa-briefcase"></i> My Work</a>
+                    <a href="#"><i class="fa-solid fa-phone"></i> Contact Me</a>
+                </div>
             </div>
         </div>
         <div class="content">
@@ -219,8 +226,8 @@
                 <h2>Testimonials</h2>
                 <div class="flex">
                     <div>
-                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRqE1ps_-BdiMr-nGFbv_6wRqWjh2Yh3naK_g&usqp=CAU" alt="">
-                        <h3>John Doe</h3>
+                        <img src="https://res.cloudinary.com/crunchbase-production/image/upload/c_lpad,h_256,w_256,f_auto,q_auto:eco,dpr_1/v1448909339/owy8vzc7yerywuljcna0.jpg" alt="">
+                        <h3>Bill Gates</h3>
                         <p>"I worked with John Doe and he's a great guy. He is always willing to help when needed, even if it's not his area. I really liked."</p>
                     </div>
                 </div>
@@ -245,6 +252,11 @@
             </section>
             <footer>
                 <p>© 2022 Junot. All right reserved.</p>
+                <div class="icones">
+                    <a href="#"><i class="fa-brands fa-github"></i></a>
+                    <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                </div>
             </footer>
     </div>
 
